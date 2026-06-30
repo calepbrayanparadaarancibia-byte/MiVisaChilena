@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- Indica al navegador que este es un documento HTML5 -->
+<html lang="es">
+
+<head>
+    <!-- El bloque head contiene configuraciones que no se ven en la pantalla -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la pagina se adapte bien a celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titulo principal que aparece en la pestaña del navegador -->
+    <title>Mi Visa Chile | Residencia Temporal</title>
+
+    <!-- Enlace a Google Fonts para cambiar el tipo de letra a unas mas bonitas -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Enlace a Font Awesome para usar iconos (como WhatsApp, maletas, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Enlace a nuestro archivo CSS externo donde estan todos los estilos y colores -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- Barra de navegacion superior -->
+    <header class="barra-navegacion">
+        <!-- Logotipo de la empresa -->
+        <div class="contenedor-logo">
+            <img src="imagenes/logoVisaChile.jpg" alt="Logo Mi Visa Chile" class="logo">
+        </div>
+
+        <!-- Menu de enlaces a diferentes partes de la pagina -->
+        <nav class="menu-navegacion">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#contacto">Agendar Cita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seccion principal de inicio (Portada) -->
+    <section id="inicio" class="portada">
+        <!-- Capa semitransparente oscura para que las letras se lean mejor -->
+        <div class="capa-oscura"></div>
+
+        <!-- Contenedor con los textos de bienvenida -->
+        <div class="contenido-portada">
+            <h2 class="subtitulo">BIENVENIDO A CHILE</h2>
+            <h1>Tu Visa Chilena, <span class="texto-dorado">Facil y Segura</span></h1>
+            <p>Gestión experta para tu futuro en Chile. Profesionalismo en cada trámite.</p>
+            <p>Obtén tu residencia temporal por 2 años en Chile.</p>
+
+            <!-- Botones para que el usuario haga clic -->
+            <div class="botones-portada">
+                <a href="https://wa.me/59174332682" class="boton-dorado" target="_blank">Contactar ahora</a>
+                <a href="#servicios" class="boton-borde">Ver Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion que muestra nuestros servicios migratorios -->
+    <section id="servicios" class="seccion-servicios">
+        <!-- Titulo de la seccion -->
+        <div class="titulo-seccion">
+            <h2>NUESTROS SERVICIOS</h2>
+            <h1>Soluciones <span class="texto-dorado">Migratorias</span></h1>
+        </div>
+
+        <!-- Contenedor que agrupa las tarjetas de los servicios -->
+        <div class="cuadricula-servicios">
+
+            <!-- Primera tarjeta: Residencia -->
+            <div class="tarjeta-servicio">
+                <div class="imagen-tarjeta">
+                    <img src="imagenes/personaConCarnet1.webp" alt="Residencia">
+                </div>
+                <div class="contenido-tarjeta">
+                    <i class="fa-solid fa-id-card icono-tarjeta"></i>
+                    <h3>Residencia</h3>
+                    <p>Asesoría integral para obtener tu documentación chilena por 2 años.</p>
+                </div>
+            </div>
+
+            <!-- Segunda tarjeta: Visas de Turismo -->
+            <div class="tarjeta-servicio">
+                <div class="imagen-tarjeta">
+                    <img src="imagenes/personaConMaletas1.avif" alt="Turismo">
+                </div>
+                <div class="contenido-tarjeta">
+                    <i class="fa-solid fa-plane-departure icono-tarjeta"></i>
+                    <h3>Visas de Turismo</h3>
+                    <p>Gestionamos tu entrada al país de forma rápida y segura sin errores.</p>
+                </div>
+            </div>
+
+            <!-- Tercera tarjeta: Inversion / Negocios -->
+            <div class="tarjeta-servicio">
+                <div class="imagen-tarjeta">
+                    <img src="imagenes/personaConMaletas2.avif" alt="Negocios">
+                </div>
+                <div class="contenido-tarjeta">
+                    <i class="fa-solid fa-briefcase icono-tarjeta"></i>
+                    <h3>Inversion</h3>
+                    <p>Todo lo necesario para emprendedores y trabajadores extranjeros.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seccion de fotos de Chile para atraer a los clientes -->
+    <section id="destinos" class="seccion-destinos">
+        <div class="titulo-seccion">
+            <h1>Chile te <span class="texto-dorado">Espera</span></h1>
+        </div>
+
+        <!-- Contenedor de las fotos -->
+        <div class="cuadricula-destinos">
+            <div class="foto-destino"><img src="imagenes/paisaje2.avif" alt="Paisaje de Chile"></div>
+            <div class="foto-destino"><img src="imagenes/paisaje3.jpg" alt="Cordillera Chilena"></div>
+            <div class="foto-destino"><img src="imagenes/banderasChile1.jpg" alt="Bandera Chilena"></div>
+            <div class="foto-destino"><img src="imagenes/banderasChile2.jpg" alt="Detalle Bandera de Chile"></div>
+        </div>
+    </section>
+
+    <!-- Seccion final para el contacto y las redes sociales -->
+    <section id="contacto" class="seccion-contacto">
+        <h1>Conecta con <span class="texto-dorado">Nosotros</span></h1>
+
+        <!-- Botones grandes para ir a las redes sociales -->
+        <div class="botones-sociales">
+            <a href="https://wa.me/59174332682" class="tarjeta-social fondo-whatsapp" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> <span>WhatsApp</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61577626055951" class="tarjeta-social fondo-facebook"
+                target="_blank">
+                <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
+            </a>
+            <a href="https://www.tiktok.com/@visachilena?is_from_webapp=1&sender_device=pc"
+                class="tarjeta-social fondo-tiktok" target="_blank">
+                <i class="fa-brands fa-tiktok"></i> <span>TikTok</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Pie de pagina con los derechos reservados -->
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Mi Visa Chile. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Boton de WhatsApp que siempre esta visible (flota en la esquina) -->
+    <a href="https://wa.me/59174332682" class="whatsapp-flotante" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+
+</html>

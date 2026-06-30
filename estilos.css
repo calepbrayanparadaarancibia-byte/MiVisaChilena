@@ -1,0 +1,467 @@
+/* REGLAS GENERALES PARA TODA LA PAGINA */
+* {
+    margin: 0;
+    /* Quita los margenes por defecto del navegador */
+    padding: 0;
+    /* Quita el espacio interior por defecto */
+    box-sizing: border-box;
+    /* El tamaño de la caja incluye el borde y relleno */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Tipo de letra principal para toda la pagina */
+    background-color: #ffffff;
+    /* Fondo de color blanco */
+}
+
+/* BARRA DE NAVEGACION SUPERIOR */
+.barra-navegacion {
+    display: flex;
+    /* Ordena el logo y el menu en una sola fila */
+    justify-content: space-between;
+    /* Separa el logo a la izquierda y el menu a la derecha */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    padding: 15px 50px;
+    /* Da espacio interior: 15px arriba/abajo y 50px a los lados */
+    position: fixed;
+    /* Deja la barra fija arriba aunque bajemos en la pagina */
+    width: 100%;
+    /* Ocupa todo el ancho de la pantalla */
+    top: 0;
+    /* La pega al tope de arriba */
+    background-color: white;
+    /* Fondo de color blanco */
+    border-bottom: 2px solid #0039a6;
+    /* Agrega una linea azul en la parte de abajo */
+    z-index: 1000;
+    /* Asegura que la barra este por encima de todo lo demas */
+}
+
+.logo {
+    height: 50px;
+    /* Define el alto de la imagen del logotipo */
+}
+
+.menu-navegacion ul {
+    display: flex;
+    /* Ordena los enlaces en una fila */
+    list-style: none;
+    /* Quita los puntitos de la lista */
+    gap: 20px;
+    /* Espacio de 20px entre cada enlace */
+}
+
+.menu-navegacion a {
+    text-decoration: none;
+    /* Quita el subrayado feo de los enlaces HTML */
+    color: black;
+    /* Pinta el texto de color negro */
+    font-weight: bold;
+    /* Pone la letra en negrita (mas gruesa) */
+    text-transform: uppercase;
+    /* Convierte las letras a mayusculas */
+    font-size: 14px;
+    /* Tamaño de la letra */
+}
+
+.menu-navegacion a:hover {
+    color: #0039a6;
+    /* Cambia a azul al pasar el mouse por encima */
+}
+
+/* SECCION DE INICIO (PORTADA PRINCIPAL) */
+.portada {
+    height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    /* Permite centrar el contenido facilmente */
+    align-items: center;
+    /* Centra el texto verticalmente */
+    justify-content: center;
+    /* Centra el texto horizontalmente */
+    text-align: center;
+    /* Centra el texto en su propia caja */
+    background-image: url('imagenes/paisaje1.avif');
+    /* Pone la imagen de paisaje de fondo */
+    background-size: cover;
+    /* Hace que la imagen cubra todo el espacio sin deformarse */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    position: relative;
+    /* Necesario para poner la capa oscura encima despues */
+    color: white;
+    /* Texto de color blanco para que contraste */
+}
+
+
+
+.contenido-portada {
+    position: relative;
+    /* Esto hace que el texto quede por encima de la capa oscura */
+    z-index: 10;
+    /* Un numero alto para que se vea sobre el fondo */
+    padding: 20px;
+    /* Un poco de espacio a los lados */
+}
+
+.portada h2.subtitulo {
+    font-size: 20px;
+    /* Tamaño del subtitulo de arriba */
+    margin-bottom: 10px;
+    /* Espacio por debajo */
+}
+
+.portada h1 {
+    font-family: 'Playfair Display', serif;
+    /* Tipo de letra mas elegante para el titulo */
+    font-size: 55px;
+    /* Tamaño de letra muy grande */
+    margin-bottom: 20px;
+    /* Espacio debajo del titulo */
+}
+
+.portada p {
+    font-size: 20px;
+    /* Tamaño de los parrafos */
+    margin-bottom: 15px;
+    /* Espacio entre parrafos */
+}
+
+.texto-dorado {
+    color: #D4AF37;
+    /* Color dorado muy elegante */
+}
+
+/* BOTONES DE LA PORTADA */
+.botones-portada {
+    margin-top: 30px;
+    /* Separa los botones de los textos de arriba */
+}
+
+.boton-dorado {
+    background-color: #D4AF37;
+    /* Fondo de color dorado */
+    color: black;
+    /* Texto color negro */
+    padding: 15px 30px;
+    /* Relleno del boton: 15px arriba/abajo, 30px a los lados */
+    text-decoration: none;
+    /* Quita el subrayado */
+    font-weight: bold;
+    /* Texto en negrita */
+    border-radius: 5px;
+    /* Esquinas un poco redondeadas */
+    margin-right: 10px;
+    /* Deja espacio a la derecha para separar del otro boton */
+    display: inline-block;
+    /* Lo convierte en un bloque que respeta margenes */
+}
+
+.boton-dorado:hover {
+    background-color: #e6c555;
+    /* Se pone dorado mas clarito al pasar el mouse */
+}
+
+.boton-borde {
+    background-color: transparent;
+    /* Fondo transparente, no tiene color */
+    border: 2px solid white;
+    /* Dibuja un borde blanco de 2 pixeles de grueso */
+    color: white;
+    /* Texto blanco */
+    padding: 13px 30px;
+    /* Relleno un poco menor por el borde extra */
+    text-decoration: none;
+    /* Quita el subrayado */
+    font-weight: bold;
+    /* Letra negrita */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
+    display: inline-block;
+    /* Bloque en linea */
+}
+
+.boton-borde:hover {
+    background-color: white;
+    /* Fondo totalmente blanco al pasar el mouse */
+    color: black;
+    /* Y el texto cambia a negro para que se pueda leer */
+}
+
+/* SECCION DE NUESTROS SERVICIOS */
+.seccion-servicios {
+    padding: 120px 50px;
+    /* Espacio generoso arriba/abajo y a los lados */
+    text-align: center;
+    /* Centra todos los textos e imagenes de esta seccion */
+}
+
+.titulo-seccion h2 {
+    color: #555555;
+    /* Texto color gris oscuro */
+    font-size: 18px;
+    /* Letra no tan grande */
+}
+
+.titulo-seccion h1 {
+    font-family: 'Playfair Display', serif;
+    /* Letra elegante */
+    font-size: 40px;
+    /* Titulo grande */
+    margin-bottom: 50px;
+    /* Mucho espacio debajo para separar de las tarjetas */
+}
+
+.cuadricula-servicios {
+    display: flex;
+    /* Coloca las tarjetas de servicios en una fila */
+    justify-content: center;
+    /* Centra las tarjetas en medio de la pantalla */
+    gap: 30px;
+    /* Espacio de 30px entre cada tarjeta */
+    flex-wrap: wrap;
+    /* Si no caben en la pantalla (como en celular), bajan de renglon */
+}
+
+.tarjeta-servicio {
+    background-color: white;
+    /* Fondo blanco para la tarjeta */
+    width: 300px;
+    /* Ancho fijo de la tarjeta */
+    border: 1px solid #dddddd;
+    /* Borde gris muy clarito y sutil */
+    border-radius: 10px;
+    /* Bordes redondeados en las esquinas */
+    text-align: center;
+    /* Centra el contenido interior */
+}
+
+.tarjeta-servicio:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Crea una pequeña sombra 3D al pasar el mouse por encima */
+}
+
+.imagen-tarjeta img {
+    width: 100%;
+    /* La imagen ocupa todo el ancho de su tarjeta */
+    height: 200px;
+    /* Alto fijo de 200px */
+    object-fit: cover;
+    /* Evita que la imagen se deforme o estire mal */
+    border-top-left-radius: 10px;
+    /* Redondea solo la esquina superior izquierda para que calce con la tarjeta */
+    border-top-right-radius: 10px;
+    /* Redondea solo la esquina superior derecha */
+}
+
+.contenido-tarjeta {
+    padding: 25px;
+    /* Espacio interior generoso para que el texto no toque los bordes */
+}
+
+.icono-tarjeta {
+    font-size: 40px;
+    /* Tamaño grande para el icono (avion, maletin, carnet) */
+    color: #0039a6;
+    /* Color azul institucional */
+    margin-bottom: 15px;
+    /* Espacio debajo del icono */
+}
+
+.contenido-tarjeta h3 {
+    margin-bottom: 10px;
+    /* Espacio debajo del subtitulo de la tarjeta */
+}
+
+/* SECCION DE FOTOS (DESTINOS) */
+.seccion-destinos {
+    padding: 80px 50px;
+    /* Relleno de la seccion */
+    background-color: #f9f9f9;
+    /* Fondo gris super claro para diferenciar del blanco anterior */
+    text-align: center;
+    /* Centra titulo */
+}
+
+.cuadricula-destinos {
+    display: flex;
+    /* Pone las imagenes en fila */
+    justify-content: center;
+    /* Las centra al medio */
+    gap: 20px;
+    /* Separacion entre fotos */
+    flex-wrap: wrap;
+    /* Permite que bajen de renglon si no hay espacio */
+    margin-top: 40px;
+    /* Espacio respecto al titulo */
+}
+
+.foto-destino img {
+    width: 250px;
+    /* Ancho fijo de la foto */
+    height: 200px;
+    /* Alto fijo de la foto */
+    object-fit: cover;
+    /* Ajusta sin deformar */
+    border-radius: 10px;
+    /* Esquinas redondeadas */
+}
+
+.foto-destino img:hover {
+    transform: scale(1.05);
+    /* Hace que la foto crezca un 5% al pasar el mouse (efecto zoom) */
+}
+
+/* SECCION DE CONTACTO Y REDES SOCIALES */
+.seccion-contacto {
+    padding: 80px 50px;
+    /* Relleno */
+    background-color: #121212;
+    /* Fondo casi negro, muy oscuro */
+    color: white;
+    /* Texto blanco para que contraste */
+    text-align: center;
+    /* Centrado */
+}
+
+.botones-sociales {
+    display: flex;
+    /* Pone los botones de redes en fila */
+    justify-content: center;
+    /* Los centra */
+    gap: 30px;
+    /* Distancia entre tarjetas de redes */
+    margin-top: 40px;
+    /* Espacio respecto al titulo */
+    flex-wrap: wrap;
+    /* Permite bajar de renglon */
+}
+
+.tarjeta-social {
+    display: flex;
+    /* Activa flex en la tarjetita */
+    flex-direction: column;
+    /* Pone el icono arriba y el texto abajo */
+    align-items: center;
+    /* Los centra en el medio */
+    width: 150px;
+    /* Ancho fijo para que todas sean iguales */
+    padding: 25px;
+    /* Relleno de la tarjeta */
+    border-radius: 12px;
+    /* Bordes redondeados */
+    text-decoration: none;
+    /* Quita el subrayado del link */
+    color: white;
+    /* Texto blanco */
+}
+
+.tarjeta-social i {
+    font-size: 45px;
+    /* Icono de red social muy grande */
+    margin-bottom: 15px;
+    /* Espacio debajo del icono */
+}
+
+/* Colores de fondo de las redes sociales */
+.fondo-whatsapp {
+    background-color: #25d366;
+    /* Verde de WhatsApp */
+}
+
+.fondo-facebook {
+    background-color: #1877f2;
+    /* Azul de Facebook */
+}
+
+.fondo-tiktok {
+    background-color: #000000;
+    /* Negro con borde dorado */
+    border: 1px solid #D4AF37;
+}
+
+.tarjeta-social:hover {
+    opacity: 0.8;
+    /* Se hace un poco transparente al pasar el mouse */
+}
+
+/* PIE DE PAGINA (COPYRIGHT) */
+.pie-pagina {
+    background-color: #000000;
+    /* Fondo completamente negro */
+    color: #888888;
+    /* Texto color gris */
+    text-align: center;
+    /* Centrado */
+    padding: 30px;
+    /* Relleno de la cajita negra */
+}
+
+/* BOTON DE WHATSAPP QUE FLOTA */
+.whatsapp-flotante {
+    position: fixed;
+    /* Se queda estatico en la pantalla aunque hagamos scroll */
+    bottom: 30px;
+    /* Distancia desde abajo */
+    right: 30px;
+    /* Distancia desde la derecha */
+    background-color: #25d366;
+    /* Verde oficial de WhatsApp */
+    color: white;
+    /* Icono color blanco */
+    width: 65px;
+    /* Ancho del circulo */
+    height: 65px;
+    /* Alto del circulo */
+    border-radius: 50%;
+    /* Forma un circulo perfecto */
+    display: flex;
+    /* Flex para centrar el icono de adentro */
+    align-items: center;
+    /* Centra el icono verticalmente */
+    justify-content: center;
+    /* Centra el icono horizontalmente */
+    font-size: 35px;
+    /* Tamaño del icono */
+    z-index: 2000;
+    /* Numero muy alto para que NADA lo tape */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra para dar efecto de flotacion 3D */
+}
+
+.whatsapp-flotante:hover {
+    transform: scale(1.1);
+    /* El boton crece un 10% cuando ponemos el mouse */
+}
+
+/* AJUSTES PARA CELULARES */
+@media (max-width: 768px) {
+    /* Solo se activa si la pantalla es de 768 pixeles de ancho o menor */
+
+    .menu-navegacion {
+        display: none;
+        /* Ocultamos el menu principal para que no amontone el encabezado */
+    }
+
+    .portada h1 {
+        font-size: 35px;
+        /* Hacemos la letra principal mas pequeña para que quepa */
+    }
+
+    .botones-portada {
+        display: flex;
+        flex-direction: column;
+        /* Ponemos un boton debajo del otro, en lugar de lado a lado */
+        align-items: center;
+        /* Centramos los botones */
+        gap: 15px;
+        /* Espacio entre botones apilados */
+    }
+
+    .boton-dorado {
+        margin-right: 0;
+        /* Le quitamos el margen derecho que tenia en PC */
+    }
+}
